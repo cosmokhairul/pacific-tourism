@@ -1,0 +1,33 @@
+.navbar {
+    background-image: linear-gradient(-90deg, #bd055a, #59018b);
+}
+
+.single-nav {
+    /* position: relative;
+    text-decoration: none; */
+    color: rgb(231, 231, 231) !important;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.single-nav::after {
+    content: '';
+    height: 2px;
+    width: 0%;
+    background-color: rgb(197, 6, 54);
+    display: block;
+    transition: .3s ease-in-out;
+}
+
+.single-nav:hover::after {
+    content: '';
+    height: 2px;
+    width: 100%;
+    background-color: white;
+    display: block;
+}
+
+.single-nav:hover {
+    color: white;
+    font-weight: 600;
+}

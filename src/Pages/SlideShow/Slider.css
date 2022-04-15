@@ -1,0 +1,18 @@
+.carousel-img {
+    width: 120px;
+    height: 120px;
+    border: 2px solid rgb(138, 0, 131);
+}
+
+.reviewer-name {
+    padding-top: 3px;
+    font-size: 23px;
+    color: rgb(0, 0, 0);
+}
+
+.review {
+    padding-top: 3px;
+    font-size: 17px;
+    color: black;
+    font-style: italic;
+}

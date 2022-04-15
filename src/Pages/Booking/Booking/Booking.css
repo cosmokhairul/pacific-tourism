@@ -1,0 +1,56 @@
+.service-details-container {
+    width: 60%;
+}
+
+.service-details-container p {
+    text-align: justify;
+}
+
+.service-details-container img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.back-link {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.back-link:hover {
+    color: white;
+}
+
+.back-btn {
+    background-color: #bd055a;
+    border: none;
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+    font-size: large;
+    font-weight: 500;
+    padding: 8px 25px 8px 25px;
+    margin-right: 10px;
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.back-btn:hover {
+    color: white;
+    transform: scale(1.03);
+}
+
+.booking-btn {
+    background-color: #bd055a;
+    border: none;
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+    font-size: large;
+    font-weight: 500;
+    padding: 8px 25px 8px 25px;
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.booking-btn:hover {
+    transform: scale(1.03);
+
+}
