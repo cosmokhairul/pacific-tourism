@@ -10,7 +10,7 @@ const MyBookings = () => {
     const email = user.email;
 
     useEffect(() => {
-        fetch(`https://powerful-reef-54654.herokuapp.com/${email}`)
+        fetch(`https://powerful-reef-54654.herokuapp.com/myBookings/${email}`)
             .then((res) => res.json())
             .then((data) => setServices(data));
     }, [email]);
