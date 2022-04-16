@@ -8,9 +8,9 @@
 
 > ### 1. This site is a react based website where user would not be wait for the page reloading.
 
-### 2. This site is hosted at Firebase for better user experience.
+> ### 2. This site is hosted at Firebase for better user experience.
 
-### 3. All the database of this website are hosted at Heroku. 
+> ### 3. All the database of this website are hosted at Heroku. 
 
 > ### 4. This site contains login system where users must be logged in to visit the full site.
 
