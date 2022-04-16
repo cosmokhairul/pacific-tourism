@@ -13,7 +13,7 @@ const AddNewBooking = () => {
 
     const onSubmit = data => {
         console.log(data);
-        fetch("http://localhost:5000/addNewBooking", {
+        fetch("https://powerful-reef-54654.herokuapp.com/addNewBooking", {
             method: "POST",
             headers: { "content-type": "application/json" },
             body: JSON.stringify(data),

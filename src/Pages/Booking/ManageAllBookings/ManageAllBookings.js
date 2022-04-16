@@ -8,7 +8,7 @@ const ManageAllBookings = () => {
     const [changeStatus, setChangeStatus] = useState(false);
 
     useEffect(() => {
-        fetch("http://localhost:5000/allBookings")
+        fetch("https://powerful-reef-54654.herokuapp.com/allBookings")
             .then(res => res.json())
             .then(data => setBookings(data));
     }, [changeStatus]);
@@ -16,7 +16,7 @@ const ManageAllBookings = () => {
     const handleUpdate = id => {
         const status = "Approved";
 
-        fetch(`http://localhost:5000/updateStatus/${id}`, {
+        fetch(`https://powerful-reef-54654.herokuapp.com/updateStatus/${id}`, {
             method: "PUT",
             headers: { "content-type": "application/json" },
             body: JSON.stringify({ status }),
@@ -28,7 +28,7 @@ const ManageAllBookings = () => {
     const handleDelete = id => {
         const proceed = window.confirm('Are you sure want to delete?');
         if (proceed) {
-            fetch(`http://localhost:5000/deleteFinal/${id}`, {
+            fetch(`https://powerful-reef-54654.herokuapp.com/deleteFinal/${id}`, {
                 method: "DELETE",
             })
                 .then((res) => res.json())

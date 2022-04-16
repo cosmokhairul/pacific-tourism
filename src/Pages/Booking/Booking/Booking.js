@@ -13,7 +13,7 @@ const Booking = () => {
     const { user } = useAuth();
 
     useEffect(() => {
-        const url = `http://localhost:5000/singlebooking/${serviceId}`;
+        const url = `https://powerful-reef-54654.herokuapp.com/singlebooking/${serviceId}`;
         fetch(url)
             .then(res => res.json())
             .then(data => setBooking(data));
@@ -36,7 +36,7 @@ const Booking = () => {
         data.tripDetails = booking.tripDetails;
         data.bookingFee = booking.bookingFee;
 
-        fetch("http://localhost:5000/confirmBooking", {
+        fetch("https://powerful-reef-54654.herokuapp.com/confirmBooking", {
             method: "POST",
             headers: { "content-type": "application/json" },
             body: JSON.stringify(data),

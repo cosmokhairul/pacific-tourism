@@ -10,7 +10,7 @@ const MyBookings = () => {
     const email = user.email;
 
     useEffect(() => {
-        fetch(`http://localhost:5000/myBookings/${email}`)
+        fetch(`https://powerful-reef-54654.herokuapp.com/${email}`)
             .then((res) => res.json())
             .then((data) => setServices(data));
     }, [email]);
@@ -19,7 +19,7 @@ const MyBookings = () => {
     const handleDelete = (id) => {
         const proceed = window.confirm('Are you sure want to cancel the Booking?');
         if (proceed) {
-            fetch(`http://localhost:5000/cancelBooking/${id}`, {
+            fetch(`https://powerful-reef-54654.herokuapp.com/cancelBooking/${id}`, {
                 method: "DELETE",
             })
                 .then((res) => res.json())
